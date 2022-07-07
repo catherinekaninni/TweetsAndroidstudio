@@ -17,7 +17,7 @@ class TweetRvAdapter (var tweetList: List<Tweets>):
 
   override fun onBindViewHolder(holder: TweetsViewHolder, position: Int) {
     var currentTweet = tweetList.get(position)
-    holder.tvName.text=currentTweet.name
+    holder.tvName.text=currentTweet.tweet
 
   }
 

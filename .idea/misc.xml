@@ -5,7 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_favorite_fill0_wght400_grad0_opsz48.xml" value="0.1165" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15904232578024796" />
-        <entry key="app/src/main/res/layout/tweet_item_list.xml" value="0.15818725951261223" />
+        <entry key="app/src/main/res/layout/tweet_item_list.xml" value="0.25" />
       </map>
     </option>
   </component>

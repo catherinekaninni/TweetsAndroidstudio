@@ -2,6 +2,7 @@ package dev.kanini.tweets
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Adapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import dev.kanini.tweets.databinding.ActivityMainBinding
 
@@ -14,16 +15,17 @@ class MainActivity : AppCompatActivity() {
         displayTweets()
         }
     fun displayTweets(){
-        var tweets=Tweets("Timothy Mutuvi","","Today I had an amazing day at work.#Goodvibe,#Positivity,#Be happy")
-        var tweets1=Tweets("Teresia Ngina","","#100Daysofcode,Today i learnt about recycler view in Kotlin,#AkiraChix")
-        var tweet2=Tweets("Shaina Kanini","","Today was an amazing day for me because i learnt about different ways to come up with a problem and thinking through it,#Loving my career path")
-        var tweet3=Tweets("Violet Mutio","","Today I went for a biking competition in California and I was able to come number 2 out of 100.Am so proud of myself.#self love")
-        var tweet4=Tweets("Lisa Mwende","","#spoil yourself,I went to Dubai for a vacation and am enjoying myself with different kind of foods and visiting different places.#money is good")
-        var tweet5=Tweets("Vida Mutuvi","","#connect,Today I was so honoured to attend a cyber security conference that was held in New york.I got to connect with different people")
-      var tweet_List= listOf(tweets,tweets1,tweet2,tweet3,tweet4,tweet5)
+        var tweets=Tweets("Catherine Kanini","nini@gmail.com","Today I had an amazing day at work.#Goodvibe,#Positivity,#Be happy","78","70","250","16.5k","")
+        var tweets1=Tweets("Timothy Mutuvi","tmo@gmail.com","#100Daysofcode,Today i learnt about recycler view in Kotlin,#AkiraChix","50","58","80","90","")
+        var tweets2=Tweets("Teresia Ngina","ngina@gmail.com","#spoil yourself,I went to Dubai for a vacation and am enjoying myself with different kind of foods and visiting different places.#money is good","50","58","80","90","")
+        var tweets3=Tweets("Violet Mutio","mutio@gmail.com","Today I went for a biking competition in California and I was able to come number 2 out of 100.Am so proud of myself.#self love","50","58","80","90","")
+        var tweets4=Tweets("Lisa Mwende","mwesh@gmail.com","#spoil yourself,I went to Dubai for a vacation and am enjoying myself with different kind of foods and visiting different places.#money is good","78","70","250","16.5k","")
+        var tweets5=Tweets("Vida raph","vraph@gmail.com","#connect,Today I was so honoured to attend a cyber security conference that was held in New york.I got to connect with different people","78","70","250","16.5k","")
+
+        var tweet_List= listOf(tweets,tweets1,tweets2,tweets3,tweets4,tweets5)
         var tweetAdapter=TweetRvAdapter(tweet_List)
-//        binding.rvTweet.Adapter.layoutManager=LinearLayoutManager(this)
-//        binding.rvTweet.Adapter=TweetAdapter
+        binding.rvnames.layoutManager = LinearLayoutManager(this)
+        binding.rvnames.adapter = tweetAdapter
 
 
 
